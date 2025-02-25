@@ -1,0 +1,208 @@
+/* Reset margin and padding for all elements, ensure box-sizing includes padding and border in width/height */
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body settings for font and text styles */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Main container settings */
+.container {
+  width: 100%;
+  background: #ccc;
+}
+
+/* Wrapper for the entire page, taking full width */
+.wrapper__container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Header section styling */
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(3, 3, 63);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation links in the header */
+.navoption a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation bar layout in the header */
+.headernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 20px;
+}
+
+/* Navigation list inside the header */
+.headernav ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+
+/* Individual list items and links in the navigation */
+ul li a {
+  text-decoration: none;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+/* Hero image settings */
+#heroimg {
+  width: 100%;
+  height: 600px; /* Prominent height for visual impact */
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Section title and description styles */
+.sectionh2title {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  background-color: rgb(235, 235, 235);
+}
+.sectionh2title h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  line-height: 2em;
+  text-align: center;
+}
+.sectionh2title p {
+  margin-bottom: 30px;
+  font-size: smaller;
+  text-align: center;
+  color: inherit;
+}
+
+/* Mixed content section with flex layout */
+.sectionmixedcontent {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  height: 500px;
+}
+
+/* Left content wrapper with grid layout for images */
+.mixedcontent_wrapperleft {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns layout */
+  gap: 10px;
+  height: 200px;
+  position: relative;
+}
+
+/* Box styling for the images */
+.box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 150%;
+  position: relative; /* Allows text overlay */
+  overflow: hidden;
+}
+
+/* Wrapper for the content inside the box */
+.boxcontent {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* Image styling inside the box */
+.boxcontent img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Text overlay settings for images */
+.boxtext {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(3, 3, 63); /* Transparent background for readability */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Bottom content section with centered text */
+.bottomcontent {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 254, 255);
+  height: 200px;
+  text-align: center;
+}
+.bottomcontent h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+/* Right content wrapper */
+.mixedcontent_wrapperright {
+  background-color: rgb(3, 3, 63);
+  height: auto;
+  width: 25%;
+  color: white;
+}
+
+/* Right content text and padding */
+.mixedcontent_wrapperright .rightcontent {
+  padding: 20px;
+}
+
+/* Paragraph text styling inside the right content */
+.rightcontent p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Image inside right content */
+.rightcontent img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Footer section styling */
+footer {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer text styling */
+footer h1 {
+  font-size: 16px;
+}
